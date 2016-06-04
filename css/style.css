@@ -1,0 +1,115 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.background {
+  background-color: red;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation-name: colors;
+  -webkit-animation-name: colors;
+  animation-duration: 1.7s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes colors {
+  11% {background-color: red;}
+  22% {background-color: orange;}
+  33% {background-color: yellow;}
+  44% {background-color: lightgreen;}
+  55% {background-color: green;}
+  66% {background-color: blue;}
+  77% {background-color: indigo;}
+  88% {background-color: violet;}
+  100% {background-color: purple;}
+}
+
+@keyframes colors {
+  11% {background-color: red;}
+  22% {background-color: orange;}
+  33% {background-color: yellow;}
+  44% {background-color: lightgreen;}
+  55% {background-color: green;}
+  66% {background-color: blue;}
+  77% {background-color: indigo;}
+  88% {background-color: violet;}
+  100% {background-color: purple;}
+}
+
+img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto 0 auto;
+}
+
+.p1, .p2, .p3, .p4, .p5 {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 350%;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+}
+
+.p1 {
+  top: 100px;
+  left: 400px;
+  transform: rotate(10deg);
+  animation-name: text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: .5s;
+}
+
+.p2 {
+  top: 300px;
+  right: 500px;
+  transform: rotate(-30deg);
+  animation-name: text;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: .1s;
+}
+
+.p3 {
+  bottom: 100px;
+  left: 500px;
+  transform: rotate(-40deg);
+  animation-name: text;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+
+.p4 {
+  bottom: 75px;
+  right: 400px;
+  transform: rotate(20deg);
+  animation-name: text;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.p5 {
+  bottom: 220px;
+  left: 475px;
+  animation-name: text;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes text {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
